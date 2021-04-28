@@ -169,18 +169,8 @@ class: inverse, center, middle
 ![](images/new.png)
 
 
----
 
 
-
-class: inverse
-background-image: url(images/Types2.png)
-background-size: contain
-background-position: center bottom
-
-.center[
-#Types of data
-]
 
 ---
 
@@ -490,12 +480,12 @@ class: inverse
 motion plot of DCI values over time
 
 ```{r data for interactive DCI, echo=FALSE, message=FALSE, warning=FALSE}
-# DCI <- read_csv("X_Factor_Dataset.csv")
-# DCI_interact <-  DCI %>% gather(value = X, key = country, Belgium:Iraq)
-# DCI_summary <- DCI_interact %>% group_by(country) %>% summarise(DCI_mean = mean(X, na.rm = TRUE), DCI_sd = sd(X, na.rm = TRUE))
-# 
-# 
-# DCI_motion <-ggplot(DCI_interact, aes(x= Year, y = X, group =country, frame = Year, color = country, label=country, size = X)) + geom_point() + geom_label(aes(Year, X, label=country))
+DCI <- read_csv("X_Factor_Dataset.csv")
+DCI_interact <-  DCI %>% gather(value = X, key = country, Belgium:Iraq)
+DCI_summary <- DCI_interact %>% group_by(country) %>% summarise(DCI_mean = mean(X, na.rm = TRUE), DCI_sd = sd(X, na.rm = TRUE))
+
+
+DCI_motion <-ggplot(DCI_interact, aes(x= Year, y = X, group =country, frame = Year, color = country, label=country, size = X)) + geom_point() + geom_label(aes(Year, X, label=country))
 
 
 ```
@@ -503,8 +493,8 @@ motion plot of DCI values over time
 
 ```{r motion plot, echo=FALSE, message=FALSE, warning=FALSE}
 
-# ggplotly(DCI_motion, height = 600, width = 800) %>% animation_opts(300, redraw = F)
-# 
+ggplotly(DCI_motion, height = 600, width = 800) %>% animation_opts(300, redraw = F)
+
 
 ```
 
@@ -597,7 +587,7 @@ hey reasoned that as populations get bigger, their armies don’t necessarily gr
 
 .content-box-green[
 >#### In any case, the existence of peaceful societies demonstrates that humans, both female and male, can construct social worlds that are virtually free of lethal violence.
-- ####Fry et al., 2010)]
+- ####Fry et al., 2010]
 
 ???
 <blockquote>Quote goes here</blockquote>
