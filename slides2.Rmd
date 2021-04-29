@@ -184,7 +184,7 @@ background-size: contain
 
 
 ---
-Early evidence of interpersonal violence
+###Early evidence of interpersonal violence
 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -619,8 +619,8 @@ ____________________
 
 # Thanks!!!
 
-###- Nam Kim
-###- Agustin Fuentes
+
+###- Nam Kim, Agustin Fuentes, Sue Sheridan, Rahul Oka, Mark Golitko, Jennifer French
 ###- Lucy Timbrell
 ###- Evolutionary Anthropology Webinar Series at the University of Liverpool
 
@@ -636,5 +636,8 @@ ____________________
 ## Marc Kissel
 ## Email: kisselm@appstate.edu
 ## Twitter: @MarcKissel
+#### slides: 
+
+https://marckissel.github.io/Liverpool_presentation/slides2.html 
 
 
